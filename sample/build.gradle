@@ -29,7 +29,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    compile project(path: ':analogclock')
+    compile 'com.github.huteri:analogclock:0.0.1'
 }
 
 repositories {
