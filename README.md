@@ -1,12 +1,14 @@
-##Simple Analog Clock
+Simple Analog Clock
+-----
 
 Simple analog clock with beautiful interface and a feature to add data inside it
 
+![image](https://raw.githubusercontent.com/huteri/analogclock/fc176c8cb3541e8f2362862e6a4e26da7345d71f/screenshots/Screenshot_1521184376.png)
 
-![image](https://github.com/huteri/analogclock/blob/master/screenshots/Screenshot_1521184376.png?raw=true)
 
+Setup
+-----
 
-##Setup
 
 Add this to your root `build.gradle` file
 
@@ -25,7 +27,9 @@ dependencies {
 }
 ```
 
-##Usage
+Usage
+------
+
 Add the view in xml 
 
 ```
