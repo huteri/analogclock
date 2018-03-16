@@ -50,11 +50,11 @@ class AnalogClockView(context: Context, attrs: AttributeSet) : View(context, att
     var minuteColor: Int = Color.parseColor("#95a5a6")
     var secondColor: Int = Color.parseColor("#bdc3c7")
     var minuteThickness: Int = 10
-    var minuteLength: Int = 340
+    var minuteLength: Int = 300
     var secondThickness: Int = 5
-    var secondLength: Int = 350
+    var secondLength: Int = 320
     var hourThickness: Int = 10
-    var hourLength: Int = 200
+    var hourLength: Int = 170
     var clockThickness: Int = 15
 
     var indexSelected: Int = 0
