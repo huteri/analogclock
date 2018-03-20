@@ -5,7 +5,6 @@ Simple analog clock with beautiful interface and a feature to add data inside it
 
 ![image](https://raw.githubusercontent.com/huteri/analogclock/fc176c8cb3541e8f2362862e6a4e26da7345d71f/screenshots/Screenshot_1521184376.png)
 
-
 Setup
 -----
 
@@ -44,6 +43,11 @@ Add the view in xml
 See [`MainActivity.java`](https://github.com/huteri/analogclock/blob/master/sample/src/main/java/me/huteri/arcview/MainActivity.java) for more details
 
 
+Developer Note
+------
+I made an article about how I create this if you like to know.
+
+http://huteri.me/2018/03/19/learning-custom-views-in-android/
 
 License
 -------
