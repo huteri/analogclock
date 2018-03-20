@@ -160,9 +160,8 @@ class AnalogClockView(context: Context, attrs: AttributeSet) : View(context, att
 
                 pathSelected.computeBounds(rectFSelected, true)
 
-
-                i.path = pathSelected
                 i.region = Region(Rect().apply { set(rectFSelected.left.toInt(), rectFSelected.top.toInt(), rectFSelected.right.toInt(), rectFSelected.bottom.toInt()) })
+                i.region.setPath(pathSelected, i.region)
 
                 var path = Path()
 
@@ -279,11 +278,8 @@ class AnalogClockView(context: Context, attrs: AttributeSet) : View(context, att
         var count = 0
 
         for (arcSlice in list) {
-            var region = Region().apply {
-                setPath(arcSlice.path, arcSlice.region)
-            }
 
-            if (region.contains(point.x, point.y) && event.action == MotionEvent.ACTION_DOWN) {
+            if (arcSlice.region.contains(point.x, point.y) && event.action == MotionEvent.ACTION_DOWN) {
                 indexSelected = count
 
                 onSliceClickListener?.onSliceClick(indexSelected)

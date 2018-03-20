@@ -13,7 +13,6 @@ public class ArcSlice {
 
     private Date startTime, endTime;
     private Region region;
-    private Path path;
     private int color;
 
     public Date getStartTime() {
@@ -38,14 +37,6 @@ public class ArcSlice {
 
     public void setRegion(Region region) {
         this.region = region;
-    }
-
-    public Path getPath() {
-        return path;
-    }
-
-    public void setPath(Path path) {
-        this.path = path;
     }
 
     public int getColor() {
