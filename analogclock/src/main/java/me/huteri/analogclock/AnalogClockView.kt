@@ -155,10 +155,11 @@ class AnalogClockView(context: Context, attrs: AttributeSet) : View(context, att
                     set(centerX, centerY, centerX, centerY)
                 }
 
-                pathSelected.arcTo(rectFSelected, startAngle + sweepAngle, -sweepAngle);
+                pathSelected.arcTo(rectFSelected, 0f, 0f)
                 pathSelected.close()
 
                 pathSelected.computeBounds(rectFSelected, true)
+
 
                 i.path = pathSelected
                 i.region = Region(Rect().apply { set(rectFSelected.left.toInt(), rectFSelected.top.toInt(), rectFSelected.right.toInt(), rectFSelected.bottom.toInt()) })
